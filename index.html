@@ -75,6 +75,13 @@ img{max-width:100%;font-size:0}picture{display:block;width:100%;height:100%}pict
   .quick-grid{grid-template-columns:1fr}.modal{padding:12px;align-items:end}.modal-card{width:100%;max-height:92svh;overflow:auto;padding:24px 18px calc(18px + env(safe-area-inset-bottom));border-radius:18px 18px 0 0}.modal-card h3{font-size:40px}.quick-field{padding:15px}.quick-field input,.quick-field select{font-size:16px;min-height:42px}.quick-actions{display:grid;grid-template-columns:1fr;gap:8px}.quick-actions button{min-height:52px}.gallery{padding:56px 12px calc(110px + env(safe-area-inset-bottom))}.gallery img{width:100%;max-height:74svh;object-fit:contain}.gallery-close{right:16px;top:calc(16px + env(safe-area-inset-top));min-height:44px;padding:10px}.gallery-prev,.gallery-next{top:auto;bottom:calc(24px + env(safe-area-inset-bottom));transform:none;width:48px;height:48px}.gallery-prev{left:18px}.gallery-next{right:18px}.gallery-note{left:18px;bottom:calc(86px + env(safe-area-inset-bottom));font-size:7px}.gallery-count{right:18px;bottom:calc(86px + env(safe-area-inset-bottom));font-size:7px}.toast{left:var(--mobile-pad);right:var(--mobile-pad);bottom:calc(16px + env(safe-area-inset-bottom));transform:translateY(20px);width:auto;text-align:center;line-height:1.35}.toast.show{transform:translateY(0)}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}.cursor{display:none}}
+
+/* MOBILE CINEMATIC HARD FALLBACK */
+@media(max-width:900px){
+  .film-image.a{background-image:url("morning-mobile.avif")!important;opacity:1!important;}
+  .film-image.b{background-image:url("stay-mobile.avif")!important;}
+  .film-image.c{background-image:url("night-mobile.avif")!important;}
+}
 </style>
 </head>
 <body class="lock">
